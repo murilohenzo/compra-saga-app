@@ -48,7 +48,8 @@ Na Coreografia de Sagas, não há um coordenador central. Em vez disso, cada ser
 
 exemplo:
 
-![COMPRA_ORQUESTRADA_DIAGRAMA](https://github.com/murilohenzo/compra-saga-app/assets/28688721/ccfa6e2e-e24e-4de9-82e7-b88f8bd08e73)
+![COMPRA_COREOGRAFADA_DIAGRAMA](https://github.com/murilohenzo/compra-saga-app/assets/28688721/86105f16-f552-4938-8a6d-8111d5d0fcea)
+
 
 ## Processo de "Do" e "Undo" para Compensação de Transação
 
