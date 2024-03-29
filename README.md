@@ -38,15 +38,11 @@ Se precisar de mais informações ou detalhes sobre como implementar esses conce
 
 Na Orquestração de Sagas, um componente central, muitas vezes chamado de "Coordenador", é responsável por coordenar as etapas individuais da saga. O Coordenador determina quais serviços precisam ser chamados e em que ordem. Ele também lida com a lógica de compensação em caso de falha.
 
-exemplo:
-
 ![COMPRA_ORQUESTRADA_DIAGRAMA](https://github.com/murilohenzo/compra-saga-app/assets/28688721/ccfa6e2e-e24e-4de9-82e7-b88f8bd08e73)
 
 ### Coreografia de Sagas
 
 Na Coreografia de Sagas, não há um coordenador central. Em vez disso, cada serviço é responsável por sua própria parte da saga. Cada serviço reage a eventos e aciona suas próprias ações, geralmente emitindo eventos para notificar outros serviços sobre suas ações. Isso leva a um acoplamento mais fraco, mas pode tornar a coordenação mais complexa.
-
-exemplo:
 
 ![COMPRA_COREOGRAFADA_DIAGRAMA](https://github.com/murilohenzo/compra-saga-app/assets/28688721/86105f16-f552-4938-8a6d-8111d5d0fcea)
 
@@ -64,3 +60,6 @@ Implementar o processo de "undo" geralmente é mais complexo do que o processo d
 ## Conclusão
 
 O padrão de Sagas com Orquestração e Coreografia oferece abordagens flexíveis para lidar com transações distribuídas em sistemas baseados em microservices. Ao escolher entre esses modelos, é essencial considerar as necessidades específicas do sistema em termos de consistência, complexidade de coordenação e tolerância a falhas. Além disso, implementar um robusto processo de "do" e "undo" para compensação de transações é fundamental para garantir a integridade dos dados e a consistência do sistema em face de falhas inevitáveis.
+
+## Referências:
+[Distributed transaction patterns for microservices compared](https://developers.redhat.com/articles/2021/09/21/distributed-transaction-patterns-microservices-compared#choreography)
