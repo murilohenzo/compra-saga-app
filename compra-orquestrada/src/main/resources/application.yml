@@ -1,0 +1,39 @@
+spring:
+  application: compra-orquestrada
+  main:
+    banner-mode: "off"
+    allow-bean-definition-overriding: true
+  beaninfo:
+    ignore: true
+  jpa:
+    show-sql: false
+    open-in-view: false
+    properties:
+      hibernate:
+        format-sql: false
+    database-platform: org.hibernate.dialect.H2Dialect
+  datasource:
+    jdbcUrl: jdbc:h2:mem:ms-spring?useSSL=false&serverTimezone=UTC
+    username: sa
+    password: 12345
+server:
+  port: 8080
+  servlet:
+    session:
+      cookie:
+        http-only: true
+        secure: true
+  error:
+    whitelabel:
+      enabled: false
+    include-stacktrace: never
+management:
+  server:
+    port: 9090
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: info, health, metrics, prometheus #, mappings

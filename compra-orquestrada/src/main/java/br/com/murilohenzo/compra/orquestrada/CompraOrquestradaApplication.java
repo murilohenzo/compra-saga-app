@@ -1,4 +1,4 @@
-package br.com.murilohenzo.compraorquestrada;
+package br.com.murilohenzo.compra.orquestrada;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

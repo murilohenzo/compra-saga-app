@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.com.murilohenzo</groupId>
-	<artifactId>compra-orquestrada</artifactId>
+	<artifactId>compra-coreografada</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>compra-orquestrada</name>
-	<description>Uso de sagas com orquestração sem usar camel</description>
+	<name>compra-coreografada</name>
+	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>21</java.version>
 	</properties>
