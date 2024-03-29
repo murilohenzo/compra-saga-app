@@ -1,7 +1,5 @@
 # Padrão de Sagas com Orquestração e Coreografia para Comunicação de Transação entre Microservices
 
-Este documento README destina-se a fornecer uma visão geral do padrão de Sagas com Orquestração e Coreografia para lidar com comunicação de transação entre um aplicativo baseado em microsserviços que é um sistema distribuído. O sistema geral consiste em vários serviços menores e, juntos, esses serviços fornecem a funcionalidade geral do aplicativo.
-
 ## Introdução
 
 Em sistemas distribuídos baseados em microservices, é comum que diversas operações relacionadas a uma transação ocorram em diferentes serviços. Garantir a consistência entre essas operações pode ser desafiador. O padrão de Sagas surge como uma abordagem eficaz para lidar com essa complexidade, permitindo a coordenação de transações distribuídas.
@@ -42,7 +40,7 @@ Na Orquestração de Sagas, um componente central, muitas vezes chamado de "Coor
 
 exemplo:
 
-[IMAGE]
+![COMPRA_ORQUESTRADA_DIAGRAMA](https://github.com/murilohenzo/compra-saga-app/assets/28688721/ccfa6e2e-e24e-4de9-82e7-b88f8bd08e73)
 
 ### Coreografia de Sagas
 
@@ -50,7 +48,7 @@ Na Coreografia de Sagas, não há um coordenador central. Em vez disso, cada ser
 
 exemplo:
 
-[IMAGE]
+![COMPRA_ORQUESTRADA_DIAGRAMA](https://github.com/murilohenzo/compra-saga-app/assets/28688721/ccfa6e2e-e24e-4de9-82e7-b88f8bd08e73)
 
 ## Processo de "Do" e "Undo" para Compensação de Transação
 
