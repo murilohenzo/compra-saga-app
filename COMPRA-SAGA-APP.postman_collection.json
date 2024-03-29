@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "c9a4237a-8c1d-4468-8277-94e22de1514e",
+		"name": "COMPRA-SAGA-APP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5003255"
+	},
+	"item": [
+		{
+			"name": "ORQUESTRACAO-COREOGRAFIA",
+			"item": [
+				{
+					"name": "TEST-DEBITANDO-PEDIDO",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/purchases/test",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"purchases",
+								"test"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:8080",
+			"type": "string"
+		}
+	]
+}

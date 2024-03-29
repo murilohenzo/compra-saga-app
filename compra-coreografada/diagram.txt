@@ -1,0 +1,21 @@
+sequenceDiagram
+    participant Cliente
+    participant Pedido
+    participant Credito
+    participant Estoque
+
+    Cliente->>+Credito: Verificar saldo do cliente
+    Credito-->>-Cliente: Saldo suficiente
+    Cliente->>+Estoque: Reservar produto
+    Estoque-->>-Cliente: Produto reservado
+    Cliente->>+Credito: Debitar saldo do cliente
+    Credito-->>-Cliente: Saldo debitado
+
+    Cliente->>+Pedido: Solicitar compra
+    Pedido->>+Credito: Verificar saldo do cliente
+    Credito-->>-Pedido: Saldo insuficiente
+    Pedido->>+Estoque: Cancelar reserva do produto
+    Estoque-->>-Pedido: Reserva do produto cancelada
+    Pedido->>+Credito: Estornar débito do cliente
+    Credito-->>-Pedido: Débito estornado
+    Pedido-->>-Cliente: Notificação de saldo insuficiente
